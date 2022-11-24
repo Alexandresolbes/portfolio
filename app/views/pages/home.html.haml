@@ -19,31 +19,37 @@
         / li class="nav-item"
         / /li
 
-.banner{:style => "background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);"}
+.banner
   .row
     .col-6
       .container
         %h1
-          Le Wagon brings
-          %strong tech skills
-          to
-          = succeed "!" do
-            %strong creative people
+          Alexandre Solbes
+        %h3 Développeur Web Fullstack
         %p Change your life and learn to code at one of our campuses around the world.
         %a.btn.btn-flat{:href => "#"} Apply now
     .col-6
       .container
-        %h1
-          Le Wagon
+
 
 
 .container-about.p-5
   .about-info.p-5
     .row
-      .col-6-about
-        .container
-      .col-6-about
-        .container
+      .col-6
+        .container-col
+          %h4 About me
+          %p.pt-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus repellat harum a odit voluptatibus rem, recusandae magnam et dolores quidem sequi rerum numquam iure voluptatem, provident natus alias! Velit.
+          %h4 Technologies utilisées :
+          %ul.pt-2
+            %li Html
+            %li CSS
+            %li Ruby on rails 7
+            %li Javascript (Node & ES 6)
+            %li React ( learning )
+            %li PosgreSQL
+      .col-6
+        .container-col
 
 .container-service.p-5
   %h1 Services
@@ -54,3 +60,21 @@
       UI/UX
     .card-category{:style => "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)"}
       Responsive design
+
+
+.footer
+  .footer-links
+    %a{:href => "#"}
+      %i.fab.fa-github
+    %a{:href => "#"}
+      %i.fab.fa-instagram
+    %a{:href => "#"}
+      %i.fab.fa-facebook
+    %a{:href => "#"}
+      %i.fab.fa-twitter
+    %a{:href => "#"}
+      %i.fab.fa-linkedin
+  .footer-copyright
+    This footer is made with
+    %i.fas.fa-heart
+    at Le Wagon
