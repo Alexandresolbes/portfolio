@@ -1,0 +1,56 @@
+.navbar.navbar-expand-sm.navbar-light.navbar-lewagon
+  .container-fluid
+    %a.navbar-brand{:href => "#"}
+      %img{:src => "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png"}/
+    %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      %ul.navbar-nav.me-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "#"} Home
+        %li.nav-item
+          %a.nav-link{:href => "#"} Messages
+        %li.nav-item.dropdown
+          %img#navbarDropdown.avatar.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-bs-toggle" => "dropdown", :src => "https://kitt.lewagon.com/placeholder/users/ssaunier"}/
+          .dropdown-menu.dropdown-menu-end{"aria-labelledby" => "navbarDropdown"}
+            %a.dropdown-item{:href => "#"} Action
+            %a.dropdown-item{:href => "#"} Another action
+            %a.dropdown-item{"data-turbo-method" => "delete", :href => "#"} Log out
+        / li class="nav-item"
+        / /li
+
+.banner{:style => "background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);"}
+  .row
+    .col-6
+      .container
+        %h1
+          Le Wagon brings
+          %strong tech skills
+          to
+          = succeed "!" do
+            %strong creative people
+        %p Change your life and learn to code at one of our campuses around the world.
+        %a.btn.btn-flat{:href => "#"} Apply now
+    .col-6
+      .container
+        %h1
+          Le Wagon
+
+
+.container-about.p-5
+  .about-info.p-5
+    .row
+      .col-6-about
+        .container
+      .col-6-about
+        .container
+
+.container-service.p-5
+  %h1 Services
+  .cards.pt-3
+    .card-category{:style => "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)"}
+      Web development
+    .card-category{:style => "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)"}
+      UI/UX
+    .card-category{:style => "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)"}
+      Responsive design
