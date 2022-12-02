@@ -6,7 +6,7 @@ body{
 }
 
 .banner{
-  height: 650px;
+  height: 700px;
   color: white;
   h1{
     font-size: 80px;
@@ -14,12 +14,15 @@ body{
     font-weight: 700;
   }
 
-  p{
+  h2{
     color: #2B91DE;
-    font-size: 40px;
+  }
+
+  p{
+    color: #92938A;
+    font-size: 20px;
   }
 }
-
 
 .navbar-lewagon {
   justify-content: space-between;
@@ -37,8 +40,42 @@ body{
 .about{
   height: 650px;
   color: white;
-  img{
+  font-family: 'Ubuntu', sans-serif;
+  .img-about{
     border-radius: 50%;
-    width: 50%;
+    width: 40%;
   }
+
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  .img-tech{
+    width: 10%;
+  }
+}
+
+.experiences{
+  height: 400px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+  .img-wagon{
+    width: 40%;
+  }
+  .img-experiences{
+    width: 30%;
+  }
+}
+
+.projets{
+  height: 600px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.card{
+  color: white;
+  background-color: rgb(56, 50, 50);
 }

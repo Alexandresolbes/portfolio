@@ -21,7 +21,8 @@
   .container-fluid.p-5
     .typewriter
       %h1 ALEXANDRE SOLBES.
-      %p Web Developper
+      %h2 Web Developper
+      %p un développeur web curieux et en constante recherche d'opportunités et de challenges
       %button.btn.btn-dark{type: "button"} Linkedin
       %button.btn.btn-dark{type: "button"} Github
       %button.btn.btn-dark{type: "button"} Email
@@ -31,6 +32,59 @@
     .col-6
       .container-about-text
         %h3 A propos 📚
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste similique debitis, veniam mollitia quam modi nam inventore error accusamus. Eligendi voluptatum voluptatem dolor ducimus sunt. Quasi, accusantium? Earum, rem quos.
+        %p Aprés une carriére en banque internationale je suis aujourdhui web developper, j'ai assisté à la formation Webdevelopper au sein du Wagon Paris en 2022
+        %p Je suis aujourdhui en recherche de poste en tant que web developper et souhaite collaborer afin de créer des projets et je continue aussi à explorer le code et acquérir de nouvelles compétences
+        %p Lorsque je ne code pas je fais du sport me cultive sur la blockchain ainsi que la cybersécurité
+        %h3 Technologies utilisées
+        .tech
+          .javascript
+            %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/js_zz3tqj.png"} Javascript
+          .ruby
+            %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/ruby_gmclun.png"} Ruby on rails 7
+          .sass
+            %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/sass_qjiafv.png"} Sass (Scss)
+          .sql
+            %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/postgre_qwm0ca.png"} PosgreSQL
+
     .col-6.text-center
-      %img{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669311667/PP_ALEX_eyot9i.jpg"}
+      %img.img-about{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669311667/PP_ALEX_eyot9i.jpg"}
+
+.experiences.p-5.text-center
+  .row.text-center
+    %h1 Expériences & Formation
+    .col-6
+      .experiences.text-start.p-5
+        %img.img-experiences.pb-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669910305/cropped-Gala-Logo-4-4_aqsmv3.png"}
+        %p Septembre -> Octobre 2022
+        %p Refonte du front-end et back-end afin de renouveller l'identité visuelle ainsi qu'un meilleur affichage des aides destinées aux jeunes
+
+    .col-6
+      .formation.text-start.p-5
+        %img.img-wagon.pb-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669909955/le-wagon-white-87edccbd4867769e0951b7da30e253c6efd8417ee9a53a6960a9740f2dd7486e_vfrxjq.png"}
+        %p Bootcamp développeur Web 2022
+        %p Formation de 4 mois au métier de développeur web aboutissant sur une certification de niveau VI
+
+.projets.p-5
+  .row.text-center
+  %h1 Projets
+  .col-6.p-5
+    .card.mb-3
+      .row.g-0
+        .col-md-4
+          %img.img-fluid.rounded-start{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1663919338/adobestock-400178239-media-library-original-1200-802-media-library-original-1200-802___media_library_original_1200_802_invkuo.jpg"}/
+        .col-md-8
+          .card-body
+            %h5.card-title Amigo
+            %p.card-text Projet développé en équipe lors du bootcamp le wagon
+            %p.card-text
+
+  .col-6
+    .card.mb-3
+      .row.g-0
+        .col-md-4
+          %img.img-fluid.rounded-start{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1663919338/adobestock-400178239-media-library-original-1200-802-media-library-original-1200-802___media_library_original_1200_802_invkuo.jpg"}/
+        .col-md-8
+          .card-body
+            %h5.card-title Amigo
+            %p.card-text Projet développé en équipe lors du bootcamp le wagon
+            %p.card-text
