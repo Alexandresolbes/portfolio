@@ -20,8 +20,8 @@
 .banner.p-5
   .container-fluid.p-5
     .typewriter
-      %h1 ALEXANDRE SOLBES.
-      %h2 Web Developper
+      %h1.name ALEXANDRE SOLBES.
+      %h2.work Fullstack Web Developper
       %p un développeur web curieux et en constante recherche d'opportunités et de challenges
       %button.btn.btn-dark{type: "button"} Linkedin
       %button.btn.btn-dark{type: "button"} Github
@@ -37,17 +37,17 @@
         %p Lorsque je ne code pas je fais du sport me cultive sur la blockchain ainsi que la cybersécurité
         %h3 Technologies utilisées
         .tech
-          .javascript
+          .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/js_zz3tqj.png"} Javascript
-          .ruby
+          .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/ruby_gmclun.png"} Ruby on rails 7
-          .sass
+          .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/sass_qjiafv.png"} Sass (Scss)
-          .sql
+          .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/postgre_qwm0ca.png"} PosgreSQL
 
     .col-6.text-center
-      %img.img-about{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669311667/PP_ALEX_eyot9i.jpg"}
+      %img.img-about{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1670084653/solbes_pp_pro-_2_-_1_-transformed_ia2tp5.png"}
 
 .experiences.p-5.text-center
   .row.text-center
@@ -65,26 +65,37 @@
         %p Formation de 4 mois au métier de développeur web aboutissant sur une certification de niveau VI
 
 .projets.p-5
-  .row.text-center
-  %h1 Projets
-  .col-6.p-5
-    .card.mb-3
-      .row.g-0
-        .col-md-4
-          %img.img-fluid.rounded-start{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1663919338/adobestock-400178239-media-library-original-1200-802-media-library-original-1200-802___media_library_original_1200_802_invkuo.jpg"}/
-        .col-md-8
-          .card-body
-            %h5.card-title Amigo
-            %p.card-text Projet développé en équipe lors du bootcamp le wagon
-            %p.card-text
+  %h1.text-center Mes projets récents
+  .row
+    .col-6.p-5
+      .card-projects
+        %img{alt: "", src: "https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"}/
+        .content
+          %h2 Amigo
+          %p
+            Application développée en équipe lors du bootcamp le %Wagon
+            Amigo est une application web vous permettant d'organiser votre voyage en groupe plus facilement.
+            moins de stress plus de vacances !
+            %button Voir plus >>
 
-  .col-6
-    .card.mb-3
-      .row.g-0
-        .col-md-4
-          %img.img-fluid.rounded-start{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1663919338/adobestock-400178239-media-library-original-1200-802-media-library-original-1200-802___media_library_original_1200_802_invkuo.jpg"}/
-        .col-md-8
-          .card-body
-            %h5.card-title Amigo
-            %p.card-text Projet développé en équipe lors du bootcamp le wagon
-            %p.card-text
+    .col-6.p-5
+      .card-projects
+        %img{alt: "", src: "https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"}/
+        .content
+          %h2 Amigo
+          %p
+            Application développée en équipe lors du bootcamp le %Wagon
+            Amigo est une application web vous permettant d'organiser votre voyage en groupe plus facilement.
+            moins de stress plus de vacances !
+            %button Voir plus >>
+
+
+.contact.text-center
+  %h1 Me contacter:
+  .container-contact.p-3
+    %button.btn.btn-dark{type: "button"} Linkedin
+    %button.btn.btn-dark{type: "button"} Github
+    %button.btn.btn-dark{type: "button"} Email
+
+.footer.text-center.p-3
+  %p Design par Alexandre Solbes développé avec Haml et Scss
