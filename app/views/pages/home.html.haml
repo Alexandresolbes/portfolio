@@ -1,42 +1,36 @@
 .navbar.navbar-expand-sm.navbar-light.navbar-lewagon
   .container-fluid
     %a.navbar-brand{href: "#"}
-      %img{src: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png"}/
+      %img{src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1670507295/letter-a_ojmnq1.png"}/
     %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", type: "button"}
       %span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
       %ul.navbar-nav.me-auto
         %li.nav-item.active
-          %a.nav-link{href: "#"} Home
+          %a.nav-link{href: "#"} Projets
         %li.nav-item
-          %a.nav-link{href: "#"} Messages
-        %li.nav-item.dropdown
-          %img#navbarDropdown.avatar.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-bs-toggle" => "dropdown", src: "https://kitt.lewagon.com/placeholder/users/ssaunier"}/
-          .dropdown-menu.dropdown-menu-end{"aria-labelledby" => "navbarDropdown"}
-            %a.dropdown-item{href: "#"} Action
-            %a.dropdown-item{href: "#"} Another action
-            %a.dropdown-item{"data-turbo-method" => "delete", href: "#"} Log out
+          %a.nav-link{href: "#"} CV
 
-.banner.p-5
-  .container-fluid.p-5
-    .typewriter
+.banner
+  .col-sm-6
+    .container-fluid.p-5
       %h1.name ALEXANDRE SOLBES.
-      %h2.work Fullstack Web Developper
+      %h2.work Développeur Web Fullstack
       %p un développeur web curieux et en constante recherche d'opportunités et de challenges
-      %button.btn.btn-dark{type: "button"} Linkedin
-      %button.btn.btn-dark{type: "button"} Github
-      %button.btn.btn-dark{type: "button"} Email
+      %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
+      %a.btn.btn-dark{href: "", role: "button"} Email
+      %a.btn.btn-dark{href: "https://github.com/Alexandresolbes", role: "button"} Github
 
 .about.p-5
-  .row
-    .col-6
+  .row.pb-5
+    .col-sm-6
       .container-about-text
         %h3 A propos 📚
-        %p Aprés une carriére en banque internationale je suis aujourdhui web developper, j'ai assisté à la formation Webdevelopper au sein du Wagon Paris en 2022
-        %p Je suis aujourdhui en recherche de poste en tant que web developper et souhaite collaborer afin de créer des projets et je continue aussi à explorer le code et acquérir de nouvelles compétences
-        %p Lorsque je ne code pas je fais du sport me cultive sur la blockchain ainsi que la cybersécurité
-        %h3 Technologies utilisées
-        .tech
+        %p Aprés une carriére en banque internationale je suis aujourdhui web developper, j'ai assisté à la formation Webdevelopper au sein du Wagon Paris en 2022.
+        %p Je suis aujourdhui en recherche de poste en tant que web developper et souhaite collaborer afin de créer des projets et je continue aussi à explorer le code et acquérir de nouvelles compétences.
+        %p Lorsque je ne code pas je fais du sport me cultive sur la blockchain ainsi que la cybersécurité.
+        %h3 Technologies utilisées :
+        .tech.pb-5
           .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/js_zz3tqj.png"} Javascript
           .tech-logos
@@ -46,57 +40,48 @@
           .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/postgre_qwm0ca.png"} PosgreSQL
 
-    .col-6.text-center
+    .col-sm-6.text-center.pb-5
       %img.img-about{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1670084653/solbes_pp_pro-_2_-_1_-transformed_ia2tp5.png"}
 
-.experiences.p-5.text-center
-  .row.text-center
-    %h1 Expériences & Formation
-    .col-6
-      .experiences.text-start.p-5
-        %img.img-experiences.pb-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669910305/cropped-Gala-Logo-4-4_aqsmv3.png"}
-        %p Septembre -> Octobre 2022
-        %p Refonte du front-end et back-end afin de renouveller l'identité visuelle ainsi qu'un meilleur affichage des aides destinées aux jeunes
 
-    .col-6
-      .formation.text-start.p-5
-        %img.img-wagon.pb-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669909955/le-wagon-white-87edccbd4867769e0951b7da30e253c6efd8417ee9a53a6960a9740f2dd7486e_vfrxjq.png"}
-        %p Bootcamp développeur Web 2022
-        %p Formation de 4 mois au métier de développeur web aboutissant sur une certification de niveau VI
+.experiences.p-5.pt-5
+  .row.pb-5
+    %h5 Expériences & Formation
+    .col-sm-6.text-start.pt-5
+      %img.img-experiences{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669910305/cropped-Gala-Logo-4-4_aqsmv3.png"}
+      %h4 Septembre -> Octobre 2022
+      %p Refonte du front-end et back-end afin de renouveller l'identité visuelle ainsi qu'un meilleur affichage des aides destinées aux jeunes.
+
+    .col-sm-6.text-start.pt-5
+      %img.img-wagon{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669909955/le-wagon-white-87edccbd4867769e0951b7da30e253c6efd8417ee9a53a6960a9740f2dd7486e_vfrxjq.png"}
+      %h4 Bootcamp développeur Web 2022
+      %p Formation de 4 mois au métier de développeur web aboutissant sur une certification de niveau VI.
 
 .projets.p-5
-  %h1.text-center Mes projets récents
   .row
-    .col-6.p-5
-      .card-projects
-        %img{alt: "", src: "https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"}/
-        .content
-          %h2 Amigo
-          %p
-            Application développée en équipe lors du bootcamp le %Wagon
-            Amigo est une application web vous permettant d'organiser votre voyage en groupe plus facilement.
-            moins de stress plus de vacances !
-            %button Voir plus >>
+    %h5 Mes projets récents
+    .col-sm-6.pb-5.pt-5
+      .row.row-cols-1.row-cols-md-2.g-4.d-flex.justify-content-center
+        .col
+          .card
+            %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
+            .card-body
+              %h5.card-title Amigo
+              %p.card-text Projet développé en fin de bootcamp développement Web.
+              %button.btn.btn-dark{type: "button"} Ruby
+              %button.btn.btn-dark{type: "button"} Sass
+    .col-sm-6.pb-5.pt-5
+      .row.row-cols-1.row-cols-md-2.g-4.d-flex.justify-content-center
+        .col
+          .card
+            %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
+            .card-body
+              %h5.card-title Spooky Bnb
+              %p.card-text Clone air bnb proposant la location de biens hantés.
+              %button.btn.btn-dark{type: "button"} Ruby
+              %button.btn.btn-dark{type: "button"} Sass
 
-    .col-6.p-5
-      .card-projects
-        %img{alt: "", src: "https://images.unsplash.com/photo-1518057111178-44a106bad636?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"}/
-        .content
-          %h2 Amigo
-          %p
-            Application développée en équipe lors du bootcamp le %Wagon
-            Amigo est une application web vous permettant d'organiser votre voyage en groupe plus facilement.
-            moins de stress plus de vacances !
-            %button Voir plus >>
-
-
-.contact.text-center.p-5
-  %p Je suis actuellement en pleine exploration de React & Tailwind CSS
-  %h1 Me contacter:
-  .container-contact.p-3
-    %button.btn.btn-dark{type: "button"} Linkedin
-    %button.btn.btn-dark{type: "button"} Github
-    %button.btn.btn-dark{type: "button"} Email
-
-.footer.text-center.p-3
-  %p Design par Alexandre Solbes développé avec Haml et Scss
+.contact.text-center.pb-5
+  %h5 Me contacter
+  %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
+  %a.btn.btn-dark{href: "", role: "button"} Email
