@@ -69,4 +69,16 @@ body{
 
 .contact{
   color: white;
+  p{
+    color: #92938A;
+  }
+  .btn{
+    margin-right: 20px;
+  }
+}
+
+h5 {
+  background: -webkit-linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

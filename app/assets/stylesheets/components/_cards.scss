@@ -1,5 +1,15 @@
 .card{
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: white;
+  background-color: #FFFFFF;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   border: 5em;
+  border-color: grey;
+  p{
+    color: #92938A;
+  }
+  .btn-card{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }

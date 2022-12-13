@@ -5,26 +5,44 @@
   background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
   .name{
     font-size: 100px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
   }
-
-  .work{
+  .banner-work {
+    background: -webkit-linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
     font-size: 40px;
-    color: #2B91DE;
-    font-family: 'Ubuntu', sans-serif;
   }
-
   p{
     color: #92938A;
-    font-size: 20px;
   }
 
-  @media (max-width: 576px)
-  {  .name{
+  .buttons-banner{
+    display: flex;
+  }
+  .btn-1{
+    margin-right: 20px;
+  }
+  .btn-3{
+    margin-left: 20px;
+  }
+
+@media (max-width: 576px) {
+  .name{
     font-size: 55px;
-   } }
+  }
+  .buttons-banner{
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn-1{
+    margin-right: 20px;
+  }
+  .btn-3{
+    margin-left: 20px;
+  }
+}
 }

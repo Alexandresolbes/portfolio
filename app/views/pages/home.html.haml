@@ -15,22 +15,30 @@
   .col-sm-6
     .container-fluid.p-5
       %h1.name ALEXANDRE SOLBES.
-      %h2.work Développeur Web Fullstack
-      %p un développeur web curieux et en constante recherche d'opportunités et de challenges
-      %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
-      %a.btn.btn-dark{href: "", role: "button"} Email
-      %a.btn.btn-dark{href: "https://github.com/Alexandresolbes", role: "button"} Github
+      .banner-work
+        %strong Développeur Web fullstack
+      .banner-text
+        curieux et en constante recherche d'opportunités et de challenges
+      .buttons-banner.p-5
+        .btn-1
+          %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
+        .btn-2
+          %a.btn.btn-dark{href: "", role: "button"} Email
+        .btn-3
+          %a.btn.btn-dark{href: "https://github.com/Alexandresolbes", role: "button"} Github
 
 .about.p-5
-  .row.pb-5
+  .row
     .col-sm-6
-      .container-about-text
+      .container-fluid
         %h3 A propos 📚
+        .about-text.pt-3
         %p Aprés une carriére en banque internationale je suis aujourdhui web developper, j'ai assisté à la formation Webdevelopper au sein du Wagon Paris en 2022.
         %p Je suis aujourdhui en recherche de poste en tant que web developper et souhaite collaborer afin de créer des projets et je continue aussi à explorer le code et acquérir de nouvelles compétences.
         %p Lorsque je ne code pas je fais du sport me cultive sur la blockchain ainsi que la cybersécurité.
-        %h3 Technologies utilisées :
-        .tech.pb-5
+        .tech-title.pt-5
+        %h5 Technologies utilisées :
+        .tech.pb-3
           .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/js_zz3tqj.png"} Javascript
           .tech-logos
@@ -40,12 +48,12 @@
           .tech-logos
             %img.img-tech.p-3{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1668539359/postgre_qwm0ca.png"} PosgreSQL
 
-    .col-sm-6.text-center.pb-5
+    .col-sm-6.text-center.pb-3
       %img.img-about{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1670084653/solbes_pp_pro-_2_-_1_-transformed_ia2tp5.png"}
 
 
 .experiences.p-5.pt-5
-  .row.pb-5
+  .row.pb-5.pt-5
     %h5 Expériences & Formation
     .col-sm-6.text-start.pt-5
       %img.img-experiences{:alt => "", :src => "https://res.cloudinary.com/dhbstfsez/image/upload/v1669910305/cropped-Gala-Logo-4-4_aqsmv3.png"}
@@ -68,8 +76,10 @@
             .card-body
               %h5.card-title Amigo
               %p.card-text Projet développé en fin de bootcamp développement Web.
-              %button.btn.btn-dark{type: "button"} Ruby
-              %button.btn.btn-dark{type: "button"} Sass
+              .btn-card
+                %button.btn.btn-dark{type: "button"} Ruby
+                %button.btn.btn-dark{type: "button"} Sass
+
     .col-sm-6.pb-5.pt-5
       .row.row-cols-1.row-cols-md-2.g-4.d-flex.justify-content-center
         .col
@@ -78,10 +88,13 @@
             .card-body
               %h5.card-title Spooky Bnb
               %p.card-text Clone air bnb proposant la location de biens hantés.
-              %button.btn.btn-dark{type: "button"} Ruby
-              %button.btn.btn-dark{type: "button"} Sass
+              .btn-card
+                %button.btn.btn-dark{type: "button"} Ruby
+                %button.btn.btn-dark{type: "button"} Sass
 
-.contact.text-center.pb-5
+.contact.text-center.pb-5.p-5
+  %p Je suis actuellement concentré sur React et développe plusieurs applications
   %h5 Me contacter
-  %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
-  %a.btn.btn-dark{href: "", role: "button"} Email
+  .contact-box.pt-3
+    %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
+    %a.btn.btn-dark{href: "", role: "button"} Email
