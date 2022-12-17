@@ -9,7 +9,7 @@
         %li.nav-item.active
           %a.nav-link{href: "#"} Projets
         %li.nav-item
-          %a.nav-link{href: "#"} CV
+          %a.nav-link{href: "https://drive.google.com/file/d/0ByL_a-fehyV-cGgwLU9pVEZraGdZaWFENG5JLVJkYy15ME9B/view?usp=share_link&resourcekey=0-o91-b5mPnYApkwToMZcRxQ"} CV
 
 .banner
   .col-sm-6
@@ -19,13 +19,14 @@
         %strong Développeur Web fullstack
       .banner-text
         curieux et en constante recherche d'opportunités et de challenges
-      .buttons-banner.p-5
+      .buttons-banner.py-3
         .btn-1
           %a.btn.btn-dark{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Linkedin
         .btn-2
           %a.btn.btn-dark{href: "", role: "button"} Email
         .btn-3
-          %a.btn.btn-dark{href: "https://github.com/Alexandresolbes", role: "button"} Github
+          %a.btn.btn-dark{href: "https://github.com/Alexandresolbes",role: "button"} Github
+
 
 .about.p-5
   .row
@@ -70,27 +71,29 @@
     %h5 Mes projets récents
     .col-sm-6.pb-5.pt-5
       .row.row-cols-1.row-cols-md-2.g-4.d-flex.justify-content-center
-        .col
-          .card
-            %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
-            .card-body
-              %h5.card-title Amigo
-              %p.card-text Projet développé en fin de bootcamp développement Web.
-              .btn-card
-                %button.btn.btn-dark{type: "button"} Ruby
-                %button.btn.btn-dark{type: "button"} Sass
+        .card.mb-3
+          %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
+          .card-body
+            %h5.card-title Amigo
+            %p.card-text Projet de fin de bootcamp Web development le Wagon.
+            %btn.btn.btn-dark Ruby
+            %btn.btn.btn-dark Scss
+            %btn.btn.btn-dark Javascript
+            .card-link.py-3
+              %a{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Voir plus
 
     .col-sm-6.pb-5.pt-5
       .row.row-cols-1.row-cols-md-2.g-4.d-flex.justify-content-center
-        .col
-          .card
-            %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
-            .card-body
-              %h5.card-title Spooky Bnb
-              %p.card-text Clone air bnb proposant la location de biens hantés.
-              .btn-card
-                %button.btn.btn-dark{type: "button"} Ruby
-                %button.btn.btn-dark{type: "button"} Sass
+        .card.mb-3
+          %img.card-img-top{alt: "...", src: "https://res.cloudinary.com/dhbstfsez/image/upload/v1669314887/PC301317_foy2rj.jpg"}/
+          .card-body
+            %h5.card-title Spooky Bnb
+            %p.card-text Clone Airbnb développé lors du bootcamp Web development le Wagon.
+            %btn.btn.btn-dark Ruby
+            %btn.btn.btn-dark Scss
+            %btn.btn.btn-dark Javascript
+            .card-link.py-3
+              %a{href: "https://fr.linkedin.com/in/alexandre-solbes-ab3435135", role: "button"} Voir plus
 
 .contact.text-center.pb-5.p-5
   %p Je suis actuellement concentré sur React et développe plusieurs applications
